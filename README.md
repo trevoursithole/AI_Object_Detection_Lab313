@@ -34,5 +34,30 @@ Based on the assessment requirements, this repository contains:
 * **Tracking vs. Detection:** Detection identifies objects in isolated frames, while Tracking maintains the identity of those objects throughout the duration of the video.
 * **Model Limitations:** Observed factors like lighting and object occlusion (objects blocking each other) can impact the model's ability to maintain a consistent Tracking ID.
 
+
+ ### Lab 1: Object Detection and Tracking Results Analysis
+ ### 1. Static Image Detection
+In the provided urban street and market scenes, the model successfully identified a high density of objects.
+
+Class Frequency: The "person" class was the most frequently detected, particularly in the market scene where over 10 individuals were identified.
+
+Confidence Threshold: Using a threshold of 0.35, the model captured major objects like a bus (0.36) and cars (0.39 - 0.54).
+
+Observation: Lowering the confidence to 0.10 would likely reveal smaller or occluded unique objects such as handbags or umbrellas that are currently filtered out.
+
+ ### 2. Video Tracking Performance
+The tracking script was applied to a highway surveillance video using the ByteTrack algorithm.
+
+Persistent IDs: The model assigned unique, persistent IDs to vehicles (e.g., id:78), maintaining their identity across multiple frames.
+
+Scalability: By the end of the video, the tracker successfully cataloged more than 10 unique objects, with IDs reaching as high as 182.
+
+Class Diversity: Beyond cars, the model correctly distinguished a train with a confidence of 0.37.
+
+ ### 3. Real-Time Webcam Test
+Detection Accuracy: The model maintained a high confidence score of 0.92 for the "person" class during the live feed.
+
+Robustness: Even with rapid movement or partial occlusion, the tracking ID (id:1) remained stable.
+
 ---
 *Submitted by Trevour Sithole for CMPG 313 Practical Assessment.*
