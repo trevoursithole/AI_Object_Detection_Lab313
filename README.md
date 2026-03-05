@@ -26,7 +26,7 @@ Based on the assessment requirements, this repository contains:
 * `Asian Market.jpg`: The source test image.
 * `image_detect_result.jpg`: Output showing successful object bounding boxes.
 * `video_tracking_result.avi`: Output showing active object tracking with IDs.
-* `webcam_test_demo.mp4`: Final evidence of the real-time webcam test.
+* `webcam_test_demo.avi`: Final evidence of the real-time webcam test.
 * `screenshots/`: containing Command Prompt (CMD) logs of script execution.
 
 ###  Learnings & Observations
