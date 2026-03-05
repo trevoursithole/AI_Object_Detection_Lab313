@@ -23,9 +23,10 @@ The project utilizes the `lab_1.py` script to perform three distinct tests:
 Based on the assessment requirements, this repository contains:
 * `lab_1.py`: The core Python implementation.
 * `Cars Moving On Road Footage.mp4`: The source test video.
-* `result_image.jpg`: Output showing successful object bounding boxes.
-* `result_video.avi`: Output showing active object tracking with IDs.
-* `webcam_demo.mp4`: Final evidence of the real-time webcam test.
+* `Asian Market.jpg`: The source test image.
+* `image_detect_result.jpg`: Output showing successful object bounding boxes.
+* `video_tracking_result.avi`: Output showing active object tracking with IDs.
+* `webcam_test_demo.mp4`: Final evidence of the real-time webcam test.
 * `screenshots/`: containing Command Prompt (CMD) logs of script execution.
 
 ###  Learnings & Observations
