@@ -29,6 +29,35 @@ Based on the assessment requirements, this repository contains:
 * `webcam_test_demo.avi`: Final evidence of the real-time webcam test.
 * `screenshots/`: containing Command Prompt (CMD) logs of script execution.
 
+
+
+How to Run the System
+If you don't have the libraries or tech stack installed, follow these steps to set up a "Virtual Environment" (a clean sandbox) on your computer.
+
+1. Clone & Setup
+Bash
+# Clone the repository
+git clone [YOUR_GITHUB_LINK_HERE]
+cd [YOUR_REPO_FOLDER_NAME]
+
+# Create a virtual environment
+python -m venv venv
+
+# Activate the environment
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+2. Install Dependencies
+This command installs PyTorch, OpenCV, and YOLOv8 automatically:
+
+Bash
+pip install -r requirements.txt
+3. Execute
+Webcam Test: python lab_1.py --source 0
+Video Tracking: python lab_1.py --source video_tracking_result.avi
+
+
 ###  Learnings & Observations
 * **Confidence Behavior:** Setting the confidence to **0.35** ensures that only high-probability detections are rendered, reducing false positives in the video feed.
 * **Tracking vs. Detection:** Detection identifies objects in isolated frames, while Tracking maintains the identity of those objects throughout the duration of the video.
