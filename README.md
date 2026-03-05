@@ -1,16 +1,16 @@
 # CMPG 313: Artificial Intelligence - Lab 1
 ## Training a Machine Learning Model with YOLOv8
 
-### 📌 Project Objective
+###  Project Objective
 This project demonstrates the application of Computer Vision using the **YOLOv8** framework. The goal is to implement a machine learning model capable of identifying and tracking objects in static images, pre-recorded video, and live webcam feeds. A key focus is the analysis of data collection and the functional differences between detection and tracking.
 
-### 🛠️ Technical Setup
+###  Technical Setup
 - **Framework:** YOLOv8 (Ultralytics)
 - **Language:** Python 3.x
 - **Libraries:** `opencv-python`, `ultralytics`
 - **Tracking Algorithm:** ByteTrack
 
-### 🚀 Implementation Details
+### Implementation Details
 The project utilizes the `lab_1.py` script to perform three distinct tests:
 
 1. **Image Test (Detection):** Uses `model.predict` with a confidence threshold of **0.35**. 
@@ -19,7 +19,7 @@ The project utilizes the `lab_1.py` script to perform three distinct tests:
 
 
 
-### 📁 Repository Structure
+### Repository Structure
 Based on the assessment requirements, this repository contains:
 * `lab_1.py`: The core Python implementation.
 * `Cars Moving On Road Footage.mp4`: The source test video.
@@ -28,7 +28,7 @@ Based on the assessment requirements, this repository contains:
 * `webcam_demo.mp4`: Final evidence of the real-time webcam test.
 * `screenshots/`: containing Command Prompt (CMD) logs of script execution.
 
-### 📈 Learnings & Observations
+###  Learnings & Observations
 * **Confidence Behavior:** Setting the confidence to **0.35** ensures that only high-probability detections are rendered, reducing false positives in the video feed.
 * **Tracking vs. Detection:** Detection identifies objects in isolated frames, while Tracking maintains the identity of those objects throughout the duration of the video.
 * **Model Limitations:** Observed factors like lighting and object occlusion (objects blocking each other) can impact the model's ability to maintain a consistent Tracking ID.
