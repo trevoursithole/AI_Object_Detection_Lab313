@@ -88,5 +88,3 @@ Detection Accuracy: The model maintained a high confidence score of 0.92 for the
 
 Robustness: Even with rapid movement or partial occlusion, the tracking ID (id:1) remained stable.
 
----
-*Submitted by Trevour Sithole for CMPG 313 Practical Assessment.*
